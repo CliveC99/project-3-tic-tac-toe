@@ -13,7 +13,14 @@ def intro():
     print("Win: If 3 spots are filled in a row, column or diagonally.\n")
     print("Tie: The board is filled and 'X' or 'O' are not in a row.\n")
     print("Are you ready to play?\n")
-intro()   
+
+
+    yes_no = input("Enter 'Y' for Yes - Enter 'N' for No: ")
+    if yes_no  == "y":
+        print_board()
+    if yes_no == "n":
+        print("\n\nPlease read the rules again.\n\n") 
+        intro()   
 
 
 # Global Variables
@@ -31,4 +38,4 @@ def print_board():
     print(board[3] + " | " + board[4] + " | " + board[5] + "     4 | 5 | 6")
     print(board[6] + " | " + board[7] + " | " + board[8] + "     7 | 8 | 9")
 
-print_board()
+intro()
