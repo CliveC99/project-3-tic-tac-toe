@@ -31,6 +31,8 @@ board = ["-", "-", "-",
          "-", "-", "-",
          "-", "-", "-"]
 
+current_player = "X"
+
 
 def print_board():
     """
@@ -50,13 +52,16 @@ def play_game():
     """
 
     check_if_game_going = True
-    player = "X"
     winner = None
 
+    global current_player
+
     while check_if_game_going:
-        handle_turn(player)
+        handle_turn(current_player)
 
         check_is_gameover()
+
+        flip_turns()
 
     if winner == "X":
         print("\nX won.")
@@ -73,9 +78,8 @@ def handle_turn(player):
     position = input("Choose a position from 1-9: ")
     position = int(position) - 1
 
-    board[position] = "X"
+    board[position] = player
     print_board()
-
 
 
 def check_is_gameover():
@@ -127,5 +131,19 @@ def check_for_tie():
     if "-" not in board:
         check_if_game_going = False
     return
+
+
+def flip_turns():
+    """
+    Switches the users turn.
+    """
+    global current_player
+
+    if current_player == "X":
+        current_player = "O"
+    elif current_player == "O":
+        current_player = "X"
+    return
+
 
 play_game()
