@@ -76,3 +76,34 @@ def handle_turn(player):
 
 
 play_game()
+
+def check_for_win():
+    """
+    Checks for a winner by checking rows, columns and diagonals.
+    """
+
+    winner = None
+
+    # Check for rows, columns, or diagonals
+    row_win = check_rows()
+    column_win = check_columns()
+    diagonal_win = check_diagonals()
+    if row_win:
+        winner = row_win
+    elif column_win:
+        winner = column_win
+    elif diagonal_win:
+        winner = diagonal_win
+    else:
+        winner = None
+    return
+
+
+def check_rows():
+    return
+
+def check_columns():
+    return
+
+def check_diagonals():
+    return        
