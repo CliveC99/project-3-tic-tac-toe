@@ -18,9 +18,14 @@ def intro():
     yes_no = input("Enter 'Y' for Yes - Enter 'N' for No: ")
     if yes_no  == "y":
         print_board()
-    if yes_no == "n":
+    elif yes_no == "n":
         print("\n\nPlease read the rules again.\n\n") 
-        intro()   
+        intro()
+    else: 
+        print(f"You entered: '{yes_no}', Please enter 'y' or 'n'.")
+        print("") 
+        intro()
+
 
 
 # Global Variables
