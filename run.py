@@ -50,10 +50,14 @@ def play_game():
     controls the game.
     """
 
-    handle_turn()
+    check_if_game_going = True
+    player = "X"
+
+    while check_if_game_going:
+        handle_turn(player)
 
 
-def handle_turn():
+def handle_turn(player):
     """
     Allows the user to input a number from 1-9.
     """
