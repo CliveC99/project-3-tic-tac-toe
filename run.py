@@ -56,6 +56,8 @@ def play_game():
     while check_if_game_going:
         handle_turn(player)
 
+        check_is_gameover()
+
     if winner == "X":
         print("\nX won.")
     elif winner == "O":
@@ -75,7 +77,14 @@ def handle_turn(player):
     print_board()
 
 
-play_game()
+
+def check_is_gameover():
+    """
+    Check carried out to see if the game is over.
+    """
+    check_for_win()
+    check_for_tie()
+
 
 def check_for_win():
     """
@@ -84,7 +93,6 @@ def check_for_win():
 
     winner = None
 
-    # Check for rows, columns, or diagonals
     row_win = check_rows()
     column_win = check_columns()
     diagonal_win = check_diagonals()
@@ -102,8 +110,22 @@ def check_for_win():
 def check_rows():
     return
 
+
 def check_columns():
     return
 
+
 def check_diagonals():
-    return        
+    return
+
+
+def check_for_tie():
+    """
+    Checks to see if the game is a tie.
+    """
+    check_if_game_going = True
+    if "-" not in board:
+        check_if_game_going = False
+    return
+
+play_game()
