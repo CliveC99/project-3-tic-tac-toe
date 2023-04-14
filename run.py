@@ -52,9 +52,18 @@ def play_game():
 
     check_if_game_going = True
     player = "X"
+    winner = None
 
     while check_if_game_going:
         handle_turn(player)
+
+    if winner == "X":
+        print("\nX won.")
+    elif winner == "O":
+        print("\nO won.")
+    elif winner is None:
+        print("Game is a draw.")
+
 
 
 def handle_turn(player):
