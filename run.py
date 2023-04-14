@@ -44,3 +44,23 @@ def print_board():
     print(board[6] + " | " + board[7] + " | " + board[8] + "     7 | 8 | 9")
 
 intro()
+
+def play_game():
+    """
+    controls the game.
+    """
+
+    handle_turn()
+
+
+def handle_turn():
+    """
+    Allows the user to input a number from 1-9.
+    """
+    position = input("Choose a position from 1-9: ")
+    position = int(position) - 1
+
+    board[position] = "X"
+    print_board()
+
+play_game()
