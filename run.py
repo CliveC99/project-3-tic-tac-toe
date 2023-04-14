@@ -14,25 +14,22 @@ def intro():
     print("Tie: The board is filled and 'X' or 'O' are not in a row.\n")
     print("Are you ready to play?\n")
 
-
     yes_no = input("Enter 'Y' for Yes - Enter 'N' for No: ")
-    if yes_no  == "y":
+    if yes_no == "y":
         print_board()
     elif yes_no == "n":
-        print("\n\nPlease read the rules again.\n\n") 
+        print("\n\nPlease read the rules again.\n\n")
         intro()
-    else: 
+    else:
         print(f"You entered: '{yes_no}', Please enter 'y' or 'n'.")
-        print("") 
+        print("")
         intro()
-
 
 
 # Global Variables
 board = ["-", "-", "-",
          "-", "-", "-",
          "-", "-", "-"]
-
 
 
 def print_board():
@@ -43,7 +40,9 @@ def print_board():
     print(board[3] + " | " + board[4] + " | " + board[5] + "     4 | 5 | 6")
     print(board[6] + " | " + board[7] + " | " + board[8] + "     7 | 8 | 9")
 
+
 intro()
+
 
 def play_game():
     """
@@ -65,7 +64,6 @@ def play_game():
         print("Game is a draw.")
 
 
-
 def handle_turn(player):
     """
     Allows the user to input a number from 1-9.
@@ -75,5 +73,6 @@ def handle_turn(player):
 
     board[position] = "X"
     print_board()
+
 
 play_game()
