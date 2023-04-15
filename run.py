@@ -1,4 +1,5 @@
 import os
+import time
 def intro():
     """
     Gives the user information and rules about the games.
@@ -17,11 +18,15 @@ def intro():
 
     yes_no = input("Enter 'Y' for Yes - Enter 'N' for No: ")
     if yes_no == "y":
+        print("\n\nThe game will start in 3 seconds.")
+        time.sleep(3)
         os.system('clear')
         print_board()
     elif yes_no == "n":
         os.system('clear')
         print("\n\nPlease read the rules again.\n\n")
+        print("They will appear in 3 seconds.")
+        time.sleep(3)
         intro()
     else:
         os.system('clear')
