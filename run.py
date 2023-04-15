@@ -12,7 +12,7 @@ def intro():
     print("\nRules:\n")
     print("Player 1 is given 'X'")
     print("Player 2 is given 'O'\n")
-    print("A 3x3 board is printed and is marked 1-9.\n")
+    print("A 3x3 board is printed and is marked 1-9.")
     print_board()
     print("\nWin: If 3 spots are filled in a row, column or diagonally.\n")
     print("Tie: The board is filled and 'X' or 'O' are not in a row.\n")
@@ -54,7 +54,7 @@ def print_board():
     """
     Displays the board for the game.
     """
-    print("\n\nTic-Tac-Toe - 2 Player Edition\n\n")
+    print("\nTic-Tac-Toe - 2 Player Edition\n")
     print(board[0] + " | " + board[1] + " | " + board[2] + "     1 | 2 | 3")
     print(board[3] + " | " + board[4] + " | " + board[5] + "     4 | 5 | 6")
     print(board[6] + " | " + board[7] + " | " + board[8] + "     7 | 8 | 9")
@@ -228,6 +228,8 @@ def flip_turns():
 # Reset game.
 # Option to play again.
 # Option to reset leaderboard.
+
+
 while True:
     play_game()
 
@@ -242,8 +244,6 @@ while True:
         break
     else:
         break
-    
-
 
     board = ["-", "-", "-",
              "-", "-", "-",
@@ -264,4 +264,3 @@ while True:
         os.system('clear')
         print("Score not reset.")
         print_board()
-
