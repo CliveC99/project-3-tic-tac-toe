@@ -104,7 +104,7 @@ def handle_turn(player):
             print("\nSpot is already filled, please choose an empty spot.\n")
 
     board[position] = player
-
+    os.system('clear')
     print_board()
 
 
