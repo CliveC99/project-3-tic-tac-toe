@@ -53,7 +53,6 @@ def play_game():
     controls the game.
     """
 
-
     global winner
     global check_if_game_going
     global current_player
@@ -123,7 +122,7 @@ def check_for_win():
         winner = diagonal_win
     else:
         winner = None
-    return
+
 
 def check_rows():
     """
@@ -143,6 +142,7 @@ def check_rows():
     elif row_3:
         return board[6]
 
+
 def check_columns():
     """
     Check to see is there 3 matches in a column.
@@ -160,7 +160,6 @@ def check_columns():
         return board[1]
     elif column_3:
         return board[2]
-
 
 
 def check_diagonals():
@@ -186,7 +185,6 @@ def check_for_tie():
     global check_if_game_going
     if "-" not in board:
         check_if_game_going = False
-    return
 
 
 def flip_turns():
@@ -199,7 +197,6 @@ def flip_turns():
         current_player = "O"
     elif current_player == "O":
         current_player = "X"
-    return
 
 
 play_game()
