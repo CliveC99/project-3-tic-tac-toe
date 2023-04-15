@@ -1,5 +1,7 @@
 import os
 import time
+
+
 def intro():
     """
     Gives the user information and rules about the games.
@@ -44,11 +46,15 @@ current_player = "X"
 check_if_game_going = True
 Winner = None
 
+player_one = 0
+player_two = 0
+
 
 def print_board():
     """
     Displays the board for the game.
     """
+    print("\n\nTic-Tac-Toe - 2 Player Edition\n\n")
     print(board[0] + " | " + board[1] + " | " + board[2] + "     1 | 2 | 3")
     print(board[3] + " | " + board[4] + " | " + board[5] + "     4 | 5 | 6")
     print(board[6] + " | " + board[7] + " | " + board[8] + "     7 | 8 | 9")
@@ -69,6 +75,8 @@ def play_game():
     global winner
     global check_if_game_going
     global current_player
+    global player_one
+    global player_two
 
     while check_if_game_going:
         handle_turn(current_player)
@@ -78,8 +86,10 @@ def play_game():
         flip_turns()
 
     if winner == "X":
+        player_one += 1
         print("\nX won.")
     elif winner == "O":
+        player_two += 1
         print("\nO won.")
     elif winner is None:
         print("Game is a draw.")
@@ -215,5 +225,31 @@ def flip_turns():
     elif current_player == "O":
         current_player = "X"
 
+# Reset game.
+# Option to play again.
+# Option to reset leaderboard.
+while True:
+    play_game()
 
-play_game()
+    print(f"\nPlayer X's score: {player_one}")
+    print(f"\nPlayer O's score: {player_two}")
+
+    if input("\nPlay again? \nEnter 'y' for Yes - Enter 'n' for No: ") == "n":
+        print("\n\nWe hope you enjoyed.")
+        break
+
+    board = ["-", "-", "-",
+             "-", "-", "-",
+             "-", "-", "-"]
+
+    check_if_game_going = True
+    winner = None
+    current_player = "X"
+
+    if input("\nReset score? \nEnter 'y' for Yes - Enter 'n' for No: ") == "y":
+        player_one = 0
+        player_two = 0
+    os.system('clear')
+    print("The game will restart in 2 seconds.")
+    time.sleep(2)
+    print_board()
