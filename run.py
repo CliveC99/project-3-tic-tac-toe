@@ -234,9 +234,16 @@ while True:
     print(f"\nPlayer X's score: {player_one}")
     print(f"\nPlayer O's score: {player_two}")
 
-    if input("\nPlay again? \nEnter 'y' for Yes - Enter 'n' for No: ") == "n":
-        print("\n\nWe hope you enjoyed.")
+    y_n = input("\nPlay again?\n Enter 'y' for Yes - Enter 'n' for No: ")
+    if y_n == "y":
+        print("")
+    elif y_n == "n":
+        print("We hope you enjoyed!")
         break
+    else:
+        break
+    
+
 
     board = ["-", "-", "-",
              "-", "-", "-",
@@ -246,10 +253,15 @@ while True:
     winner = None
     current_player = "X"
 
-    if input("\nReset score? \nEnter 'y' for Yes - Enter 'n' for No: ") == "y":
+    y_n = input("\nReset score?\n Enter 'y' for Yes - Enter 'n' for No: ")
+    if y_n == "y":
         player_one = 0
         player_two = 0
-    os.system('clear')
-    print("The game will restart in 2 seconds.")
-    time.sleep(2)
-    print_board()
+        os.system('clear')
+        print("Score reset.")
+        print_board()
+    elif y_n == "n":
+        os.system('clear')
+        print("Score not reset.")
+        print_board()
+
