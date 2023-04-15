@@ -83,6 +83,8 @@ def handle_turn(player):
     Makes sure the number is between 1-9.
     Does not allow the user to input data into an already filled spot.
     """
+
+    print(f"\n{player}'s turn.")
     position = input("\nChoose a position from 1-9: ")
 
     valid = False
