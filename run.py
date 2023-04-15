@@ -32,6 +32,8 @@ board = ["-", "-", "-",
          "-", "-", "-"]
 
 current_player = "X"
+check_if_game_going = True
+Winner = None
 
 
 def print_board():
@@ -51,9 +53,9 @@ def play_game():
     controls the game.
     """
 
-    check_if_game_going = True
-    winner = None
 
+    global winner
+    global check_if_game_going
     global current_player
 
     while check_if_game_going:
@@ -108,7 +110,7 @@ def check_for_win():
     Checks for a winner by checking rows, columns and diagonals.
     """
 
-    winner = None
+    global winner
 
     row_win = check_rows()
     column_win = check_columns()
@@ -123,24 +125,65 @@ def check_for_win():
         winner = None
     return
 
-
 def check_rows():
-    return
+    """
+    Check to see is there 3 matches in a row.
+    """
+    global check_if_game_going
+    row_1 = board[0] == board[1] == board[2] != "-"
+    row_2 = board[3] == board[4] == board[5] != "-"
+    row_3 = board[6] == board[7] == board[8] != "-"
 
+    if row_1 or row_2 or row_3:
+        check_if_game_going = False
+    if row_1:
+        return board[0]
+    elif row_2:
+        return board[3]
+    elif row_3:
+        return board[6]
 
 def check_columns():
-    return
+    """
+    Check to see is there 3 matches in a column.
+    """
+    global check_if_game_going
+    column_1 = board[0] == board[3] == board[6] != "-"
+    column_2 = board[1] == board[4] == board[7] != "-"
+    column_3 = board[2] == board[5] == board[8] != "-"
+
+    if column_1 or column_2 or column_3:
+        check_if_game_going = False
+    if column_1:
+        return board[0]
+    elif column_2:
+        return board[1]
+    elif column_3:
+        return board[2]
+
 
 
 def check_diagonals():
-    return
+    """
+    Check to see is there 3 matches diagonally.
+    """
+    global check_if_game_going
+    diagonals_1 = board[0] == board[4] == board[8] != "-"
+    diagonals_2 = board[2] == board[4] == board[6] != "-"
+
+    if diagonals_1 or diagonals_2:
+        check_if_game_going = False
+    if diagonals_1:
+        return board[0]
+    elif diagonals_2:
+        return board[6]
 
 
 def check_for_tie():
     """
     Checks to see if the game is a tie.
     """
-    check_if_game_going = True
+    global check_if_game_going
     if "-" not in board:
         check_if_game_going = False
     return
