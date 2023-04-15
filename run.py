@@ -9,8 +9,9 @@ def intro():
     print("\nRules:\n")
     print("Player 1 is given 'X'")
     print("Player 2 is given 'O'\n")
-    print("A 3x3 board is printed and is marked 1-9\n")
-    print("Win: If 3 spots are filled in a row, column or diagonally.\n")
+    print("A 3x3 board is printed and is marked 1-9.\n")
+    print_board()
+    print("\nWin: If 3 spots are filled in a row, column or diagonally.\n")
     print("Tie: The board is filled and 'X' or 'O' are not in a row.\n")
     print("Are you ready to play?\n")
 
@@ -21,7 +22,7 @@ def intro():
         print("\n\nPlease read the rules again.\n\n")
         intro()
     else:
-        print(f"You entered: '{yes_no}', Please enter 'y' or 'n'.")
+        print(f"\n\nYou entered: '{yes_no}', Please enter 'y' or 'n'.\n")
         print("")
         intro()
 
@@ -50,7 +51,11 @@ intro()
 
 def play_game():
     """
-    controls the game.
+    Controls the game.
+    While the game is running it places the 'X' or 'O'.
+    Makes sure the game is running.
+    Switches between 'X' and 'O'.
+    Print who won or if the game is a draw.
     """
 
     global winner
@@ -75,21 +80,23 @@ def play_game():
 def handle_turn(player):
     """
     Allows the user to input a number from 1-9.
+    Makes sure the number is between 1-9.
+    Does not allow the user to input data into an already filled spot.
     """
-    position = input("Choose a position from 1-9: ")
+    position = input("\nChoose a position from 1-9: ")
 
     valid = False
     while not valid:
 
         while position not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-            position = input("Choose from 1-9: ")
+            position = input("You entered incorrectly, Choose from 1-9: ")
 
         position = int(position) - 1
 
         if board[position] == "-":
             valid = True
         else:
-            print("This spot is already filled, please choose an empty spot")
+            print("\nSpot is already filled, please choose an empty spot.\n")
 
     board[position] = player
 
