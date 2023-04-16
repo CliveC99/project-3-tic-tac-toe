@@ -228,6 +228,8 @@ def flip_turns():
 # Reset game.
 # Option to play again.
 # Option to reset leaderboard.
+# Got help from the below link
+# https://stackoverflow.com/questions/20667726/restart-a-tictactoe-game-after-a-win
 
 
 while True:
@@ -244,7 +246,7 @@ while True:
         break
     else:
         break
-
+    # Global variables for restarting the game
     board = ["-", "-", "-",
              "-", "-", "-",
              "-", "-", "-"]
@@ -255,6 +257,7 @@ while True:
 
     y_n = input("\nReset score?\n Enter 'y' for Yes - Enter 'n' for No: ")
     if y_n == "y":
+        # resets score
         player_one = 0
         player_two = 0
         os.system('clear')
