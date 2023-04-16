@@ -20,6 +20,7 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
   - <p><a href="#cloning">Cloning</a></p>
   - <p><a href="#forking">Forking</a></p>
   - <p><a href="#git-commits">Git Commits</a></p>
+  - <p><a href="#tools-used">Tools Used</a></p>
 
 # Flowchart
 ![Flowchart](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681663239/p3-tic-tac-toe/flowchart-start.drawio_4_lrgkpj.png)
@@ -146,3 +147,8 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
    3. git commit -m (message)
    4. git push.
   ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681686359/p3-tic-tac-toe/git-commits1_esa2s2.jpg)
+
+  # Tools Used
+  # **Tools Used**
+  - I used [Drawio](https://app.diagrams.net/?src=about) for creating the flowchart.
+  - I used [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HBiqtoSkOp8dv2sdvprV-d3z6NkMdyK0guRRH98shquMJ7QiCtVbJQaAnvIEALw_wcB) for the pictures inside the README.
