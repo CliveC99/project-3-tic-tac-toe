@@ -17,6 +17,9 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
   - <p><a href="#imported-modules">Imported Modules</a></p>
   - <p><a href="#bugs-and-fixes">Bugs and Fixes</a></p>
   - <p><a href="#deployment">Deployment</a></p>
+  - <p><a href="#cloning">Cloning</a></p>
+  - <p><a href="#forking">Forking</a></p>
+  - <p><a href="#git-commits">Git Commits</a></p>
 
 # Flowchart
 ![Flowchart](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681663239/p3-tic-tac-toe/flowchart-start.drawio_4_lrgkpj.png)
@@ -116,3 +119,30 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
 13. Search for your "repo-name".
 14. Click "Automatic Deploys"
 
+# Cloning
+1. Open up the repository [project-3-tic-tac-toe.](https://github.com/CliveC99/project-3-tic-tac-toe)
+2. Above the list of files click "Code".
+3. Click if you would like to clone as "HTTPS", "SSH", or "GitHub CLI".
+4. Once selected press copy.
+5. Open Git Bash.
+6. Change the directory to where you want the clone to appear.
+7. Paste in the link you copied in step 4. (This is the line for my repository): <br>
+  `$ git clone https://github.com/CliveC99/project-3-tic-tac-toe`
+8. Press enter and the clone will happen.
+
+# Forking
+1. Open up the repository [project-3-tic-tac-toe.](https://github.com/CliveC99/project-3-tic-tac-toe)
+2. Locate the fork button at the top right.
+3. Select an owner and repository name.
+4. Add a description (optional).
+5. Click "Create fork".
+6. The repository should appear in your repositories now.
+
+# **Git Commits**
+   - I structured my git commits whenever I would add, change or update code.
+   - I did this by using:
+   1. git status
+   2. git add (file name)
+   3. git commit -m (message)
+   4. git push.
+  ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681686359/p3-tic-tac-toe/git-commits1_esa2s2.jpg)
