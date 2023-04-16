@@ -16,6 +16,7 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
   - <p><a href="#manual-testing">Manual Testing</a></p>
   - <p><a href="#imported-modules">Imported Modules</a></p>
   - <p><a href="#bugs-and-fixes">Bugs and Fixes</a></p>
+  - <p><a href="#deployment">Deployment</a></p>
 
 # Flowchart
 ![Flowchart](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681663239/p3-tic-tac-toe/flowchart-start.drawio_4_lrgkpj.png)
@@ -97,4 +98,21 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
    | Index errors | I was having issues with index errors being one off. | I fixed this by adding `int(position) - 1` where needed. |
    | Score counter | I was having issues with the score counter adding for a win. |  I solved this by adding `player_one += 1` I got help from [Stack Overflow](https://stackoverflow.com/questions/26514438/python-how-to-keep-score-in-a-tic-tac-toe-game)|
    | Reset score counter | I was having issues with the score counter resetting. | I solved this by adding `player_one = 0 player_two = 0` |
+
+   # Deployment
+
+1. Open up [Heroku.](https://dashboard.heroku.com/apps)
+2. Click "New" at the top right.
+3. Click "Create new app".
+4. Choose an "App name" and pick your region.
+5. Click "Create app".
+6. Click "Settings".
+7. Locate config vars and click "Reveal Config Vars".
+8. Set the key to "PORT".
+9. Set the value to "8000".
+10. Click "Add buildpack".
+11. Add "python" and "nodejs".
+12. Click "Deploy" and connect Github.
+13. Search for your "repo-name".
+14. Click "Automatic Deploys"
 
