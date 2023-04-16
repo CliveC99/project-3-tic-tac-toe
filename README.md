@@ -1,31 +1,39 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tic-Tac-Toe - 2 Player Edition
+Here you can play Tic-Tac-Toe against your friends.
 
-Welcome CliveC99,
+The aim of the game is to get 3 'X's' or 3 'O's' in a row, column or diagonally.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
 
-## Reminders
+### **Disclaimer if you would like to open any links in a new tab use `Ctrl` and click the link.**
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+# Table of Contents
+  
+  - <p><a href="#flowchart">Flowchart</a></p>
+  - <p><a href="#how-to-play">How To Play</a></p>
+  - <p><a href="#ux">UX</a></p>
 
-## Creating the Heroku app
+# Flowchart
+![Flowchart](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681663239/p3-tic-tac-toe/flowchart-start.drawio_4_lrgkpj.png)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# How to play
+- The game is played on a 3x3 board.
+- Player 1 is given 'X' and Player 2 is given 'O'
+- The aim of the game is to get 3 'X's or 3 'O's in a row, column or diagonally.
+- If the board is filled without the above terms. The game is a draw
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+  # UX
+### **User Goals** 
+- As a user, I want to be able to play against my friends.
+- As a user, I want the information to be understandable.
+- As a user, I want my score to be counted to see who wins overall.
+- As a user, I want the game to run smoothly.
+- As a user, I want to be able to play again.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### **Owner Goals**
+- As the owner, I want to be able to add new features.
 
-Connect your GitHub repository and deploy as normal.
+### **Returning User**
+- As a returning user, I want to try and beat my previous scores against friends.
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
