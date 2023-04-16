@@ -91,9 +91,9 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
    | CI Heroku Terminal | Game to function without issues. | Game functions. | Play the game. |
 
    # Imported Modules
-  - OS
+  - [OS](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
     - I used `os.system('clear')` to clear the terminal so it wouldn't be clogged up.
-  - Time
+  - [Time](https://www.digitalocean.com/community/tutorials/python-time-sleep)
     - I used `time.sleep(3)` so it would give the user time to read the information.
 
     # Bugs and Fixes
@@ -166,5 +166,11 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
     - [Tutorial 3](https://www.youtube.com/watch?v=kz7kF8CMAso&ab_channel=Code%27sPathshala)
     - [Tutorial 4](https://www.youtube.com/watch?v=M3G1ZgOMFxo&t=159s&ab_channel=ShaunHalverson)
     - [Tutorial 5](https://www.youtube.com/watch?v=8eHpXLDhi6w&ab_channel=JuniLearning)
+  - I got help with `os.system('clear')` from [Scaler Topics](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
+  - I got help with `time.sleep(3)` from [Digital Ocean](https://www.digitalocean.com/community/tutorials/python-time-sleep)
   - This project would not be possible without the help of my mentor (Rory_Patrick), my friends, and my facilitator (Chris Quinn).
   - I would also like to thank the private "Novemeber 2022-UCD" group on slack for the all the support.
+
+
+
+ <p><a href="#table-of-contents">Back to table of contents.</a></p>
