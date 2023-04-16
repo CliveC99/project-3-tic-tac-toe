@@ -14,6 +14,7 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
   - <p><a href="#ux">UX</a></p>
   - <p><a href="#features">Features</a></p>
   - <p><a href="#manual-testing">Manual Testing</a></p>
+  - <p><a href="#imported-modules">Imported Modules</a></p>
 
 # Flowchart
 ![Flowchart](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681663239/p3-tic-tac-toe/flowchart-start.drawio_4_lrgkpj.png)
@@ -81,3 +82,9 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
    | Pep8 Linter | Pass. | No Errors. | ![test](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681679398/p3-tic-tac-toe/pep8_leax3w.jpg) |
    | Local Terminal | Game to function without issues. | Game functioned. | Play the game. |
    | CI Heroku Terminal | Game to function without issues. | Game functions. | Play the game. |
+
+   # Imported Modules
+  - OS
+    - I used `os.system('clear')` to clear the terminal so it wouldn't be clogged up.
+  - Time
+    - I used `time.sleep(3)` so it would give the user time to read the information.
