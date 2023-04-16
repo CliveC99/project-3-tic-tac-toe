@@ -13,6 +13,7 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
   - <p><a href="#how-to-play">How To Play</a></p>
   - <p><a href="#ux">UX</a></p>
   - <p><a href="#features">Features</a></p>
+  - <p><a href="#manual-testing">Manual Testing</a></p>
 
 # Flowchart
 ![Flowchart](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681663239/p3-tic-tac-toe/flowchart-start.drawio_4_lrgkpj.png)
@@ -63,3 +64,20 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
 * Option to play against the computor.
 * Username control.
 * Leaderboard.
+
+# Manual Testing
+   | Feature        |    Expected   | Result       | Test |
+   | -------------  |:-------------:| -----:| -----: |
+   | User input verifaction | Show error message and let the user input the right data. | If the user input the wrong data, an error shows. If the user inputs the correct data, it moves to the next step. | Input correct data and input incorrect data. |
+   | Python sleep   | Pause the next step from showing up.    | There was a pause of the next step showing where required. | Input data to move to the next step. |
+   | Players turns   | Switch from 'X' to 'O'.   | Switched correctly | Input data on the board. |
+   | Win or Draw | Show who won or the game was a draw.  | Printed the winner or if the game was a draw. | Played the game to see if it would give the right output. |
+   | Play again | Start the game again.   | The game started. | Restart the game. |
+   | Reset score   | Score either is reset or continues | When selected the score reset, when not selected the score kept counting. | Reset the score, play without resetting the score. |
+
+
+   | Testing        |    Expected   | Result       | Test |
+   | -------------  |:-------------:| -----:| -----: |
+   | Pep8 Linter | Pass. | No Errors. | ![test](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681679398/p3-tic-tac-toe/pep8_leax3w.jpg) |
+   | Local Terminal | Game to function without issues. | Game functioned. | Play the game. |
+   | CI Heroku Terminal | Game to function without issues. | Game functions. | Play the game. |
