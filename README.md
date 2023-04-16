@@ -15,6 +15,7 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
   - <p><a href="#features">Features</a></p>
   - <p><a href="#manual-testing">Manual Testing</a></p>
   - <p><a href="#imported-modules">Imported Modules</a></p>
+  - <p><a href="#bugs-and-fixes">Bugs and Fixes</a></p>
 
 # Flowchart
 ![Flowchart](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681663239/p3-tic-tac-toe/flowchart-start.drawio_4_lrgkpj.png)
@@ -88,3 +89,12 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
     - I used `os.system('clear')` to clear the terminal so it wouldn't be clogged up.
   - Time
     - I used `time.sleep(3)` so it would give the user time to read the information.
+
+    # Bugs and Fixes
+  | Bugs/Errors        |   Explain   | Fix |
+   | -------------  |:-------------:| -----: |
+   | User input  | I was having issues with user input if the wrong data was entered. | I got help from [Stack Overflow.](https://stackoverflow.com/questions/49496609/user-input-being-incorrectly-appended-to-python-list) |
+   | Index errors | I was having issues with index errors being one off. | I fixed this by adding `int(position) - 1` where needed. |
+   | Score counter | I was having issues with the score counter adding for a win. |  I solved this by adding `player_one += 1` I got help from [Stack Overflow](https://stackoverflow.com/questions/26514438/python-how-to-keep-score-in-a-tic-tac-toe-game)|
+   | Reset score counter | I was having issues with the score counter resetting. | I solved this by adding `player_one = 0 player_two = 0` |
+
