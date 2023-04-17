@@ -1,6 +1,8 @@
 # Tic-Tac-Toe - 2 Player Edition
 Here you can play Tic-Tac-Toe against your friends.
 
+The game is provided in Code Institute's heroku terminal.
+
 The aim of the game is to get 3 'X's' or 3 'O's' in a row, column or diagonally.
 
 Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
@@ -103,6 +105,8 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
    | Index errors | I was having issues with index errors being one off. | I fixed this by adding `int(position) - 1` where needed. |
    | Score counter | I was having issues with the score counter adding for a win. |  I solved this by adding `player_one += 1` I got help from [Stack Overflow](https://stackoverflow.com/questions/26514438/python-how-to-keep-score-in-a-tic-tac-toe-game)|
    | Reset score counter | I was having issues with the score counter resetting. | I solved this by adding `player_one = 0 player_two = 0` |
+   | User input for play again/reset score | I was having issues that allowed the user to continue to the next step if the data was wrong. | I solved this by adding `valid = False` and then placing `input(f"\nYou entered '{y_n}', Enter 'y' for Yes - Enter 'n' for No: ")` |
+
 
    # Deployment
 
@@ -153,6 +157,9 @@ Check out [Tic-Tac-Toe](https://tic-tac-toe-2-player.herokuapp.com/)
   # **Tools Used**
   - I used [Drawio](https://app.diagrams.net/?src=about) for creating the flowchart.
   - I used [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HBiqtoSkOp8dv2sdvprV-d3z6NkMdyK0guRRH98shquMJ7QiCtVbJQaAnvIEALw_wcB) for the pictures inside the README.
+  - I used [Github](https://github.com/) for storing my code.
+  - I used [Gitpod](https://gitpod.io/workspaces) for coding.
+  - I used [Heroku](https://dashboard.heroku.com/apps) for hosting my game.
 
 
   
