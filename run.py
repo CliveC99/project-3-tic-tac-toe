@@ -233,6 +233,7 @@ def flip_turns():
 # https://stackoverflow.com/questions/20667726/restart-a-tictactoe-game-after-a-win
 
 
+valid = False
 while True:
     play_game()
 
@@ -245,8 +246,9 @@ while True:
     elif y_n == "n":
         print("We hope you enjoyed!")
         break
-    else:
-        break
+    elif valid is False:
+        input(f"\nYou entered '{y_n}', Enter 'y' for Yes - Enter 'n' for No: ")
+
     # Global variables for restarting the game
     board = ["-", "-", "-",
              "-", "-", "-",
@@ -267,4 +269,7 @@ while True:
     elif y_n == "n":
         os.system('clear')
         print("Score not reset.")
+        print_board()
+    elif valid is False:
+        input(f"\nYou entered '{y_n}', Enter 'y' for Yes - Enter 'n' for No: ")
         print_board()
