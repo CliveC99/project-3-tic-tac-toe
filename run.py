@@ -135,6 +135,7 @@ def check_is_gameover():
 def check_for_win():
     """
     Checks for a winner by checking rows, columns and diagonals.
+    Either 3 X's or 3 O's needed for a win
     """
 
     global winner
@@ -155,6 +156,7 @@ def check_for_win():
 def check_rows():
     """
     Check to see is there 3 matches in a row.
+    Either 3 X's or 3 O's needed for a win.
     """
     global check_if_game_going
     row_1 = board[0] == board[1] == board[2] != "-"
@@ -174,6 +176,7 @@ def check_rows():
 def check_columns():
     """
     Check to see is there 3 matches in a column.
+    Either 3 X's or 3 O's needed for a win.
     """
     global check_if_game_going
     column_1 = board[0] == board[3] == board[6] != "-"
@@ -193,6 +196,7 @@ def check_columns():
 def check_diagonals():
     """
     Check to see is there 3 matches diagonally.
+    Either 3 X's or 3 O's needed for a win.
     """
     global check_if_game_going
     diagonals_1 = board[0] == board[4] == board[8] != "-"
@@ -209,6 +213,7 @@ def check_diagonals():
 def check_for_tie():
     """
     Checks to see if the game is a tie.
+    Board is filled without a win happening.
     """
     global check_if_game_going
     if "-" not in board:
@@ -218,6 +223,7 @@ def check_for_tie():
 def flip_turns():
     """
     Switches the users turn.
+    From 'X' to 'O' and keeps changing till a new game is started.
     """
     global current_player
 
